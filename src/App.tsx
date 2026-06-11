@@ -173,6 +173,8 @@ export default function App() {
     localStorage.removeItem("syntaxia_actual_projects");
     localStorage.removeItem("syntaxia_actual_mocks");
     localStorage.removeItem("syntaxia_custom_resources");
+    localStorage.removeItem("syntaxia_db_state");
+    localStorage.removeItem("syntaxia_db_mutations");
 
     // 3. Reset all client-side states to starting defaults
     setCompletedWeeks([]);
@@ -201,21 +203,67 @@ export default function App() {
     setCheckingSession(false);
   }, []);
 
-  // Fetch complete DB state from Express Server
+  // Fetch complete DB state — merges API seed data with any localStorage mutations
+  // This makes the app fully work on Vercel (stateless serverless) and locally.
   const fetchState = async () => {
     setLoadingDb(true);
     setErr(null);
     try {
       const response = await fetch("/api/state");
-      if (!response.ok) throw new Error("Failed to pull schema state from Express.");
-      const stateData = await response.json();
-      setDbState(stateData);
+      if (!response.ok) throw new Error("Server returned non-OK response.");
+      const text = await response.text();
+      // Guard against Vercel returning HTML on API miss
+      if (text.trim().startsWith("<") || text.trim().startsWith("T")) {
+        throw new Error("API returned HTML instead of JSON.");
+      }
+      const seedData: DatabaseState = JSON.parse(text);
+
+      // Merge with any localStorage-persisted mutations
+      const localMutations = localStorage.getItem("syntaxia_db_mutations");
+      if (localMutations) {
+        const mutations = JSON.parse(localMutations);
+        // Overlay mutations on top of seed data
+        const merged: DatabaseState = {
+          ...seedData,
+          notes: mutations.notes ?? seedData.notes,
+          tasks: mutations.tasks ?? seedData.tasks,
+          studySessions: mutations.studySessions ?? seedData.studySessions,
+          resources: mutations.resources ?? seedData.resources,
+          milestones: mutations.milestones ?? seedData.milestones,
+        };
+        setDbState(merged);
+      } else {
+        setDbState(seedData);
+      }
     } catch (error: any) {
-      setErr(error.message);
+      console.warn("API fetch failed, using localStorage cache:", error.message);
+      // Fallback: try cached state from localStorage
+      const cached = localStorage.getItem("syntaxia_db_state");
+      if (cached) {
+        setDbState(JSON.parse(cached));
+      } else {
+        setErr("Could not load data. Please check your connection.");
+      }
     } finally {
       setLoadingDb(false);
     }
   };
+
+  // Persist dbState to localStorage whenever it changes (so Vercel mutations survive)
+  useEffect(() => {
+    if (dbState) {
+      localStorage.setItem("syntaxia_db_state", JSON.stringify(dbState));
+      // Also save mutable portions separately for merge on next load
+      const mutations = {
+        notes: dbState.notes,
+        tasks: dbState.tasks,
+        studySessions: dbState.studySessions,
+        resources: dbState.resources,
+        milestones: dbState.milestones,
+      };
+      localStorage.setItem("syntaxia_db_mutations", JSON.stringify(mutations));
+    }
+  }, [dbState]);
 
   // Pull state once authorized
   useEffect(() => {
