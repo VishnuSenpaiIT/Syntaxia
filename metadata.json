@@ -1,0 +1,6 @@
+{
+  "name": "Syntaxia",
+  "description": "A premium private operating system to track learning, skill development, and interview preparation for Zoho.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

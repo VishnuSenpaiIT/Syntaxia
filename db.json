@@ -1,0 +1,485 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Srivishnu (Sir)",
+      "email": "vishnusenpaiit@gmail.com"
+    }
+  ],
+  "phases": [
+    {
+      "id": "phase-1",
+      "title": "Phase 1: Java Mastery & Aptitude Foundation",
+      "description": "Months 1–3 (Weeks 1–12): Java mastery + daily aptitude habit. Build a direct written round speed-advantage.",
+      "status": "in_progress",
+      "startDate": "2026-05-30",
+      "targetDate": "2026-06-19",
+      "progress": 75
+    },
+    {
+      "id": "phase-2",
+      "title": "Phase 2: Full DSA & Core CS Subjects",
+      "description": "Months 4–9 (Weeks 13–36): Master full A–Z DSA (Striver) + DBMS (Gate Smashers) + OS + OOP Deep Dive. Solve 100+ LeetCode Mediums.",
+      "status": "in_progress",
+      "startDate": "2026-06-08",
+      "targetDate": "2026-07-06",
+      "progress": 33
+    },
+    {
+      "id": "phase-3",
+      "title": "Phase 3: Competitive Coding & 3 Real Projects",
+      "description": "Months 10–13.5 (Weeks 37–54): Rated Codeforces/CodeChef sprints + build 3 high-quality Zoho-relevant Java/Spring REST backends.",
+      "status": "not_started",
+      "startDate": "2026-06-21",
+      "targetDate": "2026-07-11",
+      "progress": 0
+    },
+    {
+      "id": "phase-4",
+      "title": "Phase 4: Zoho Final Prep & Mock Simulations",
+      "description": "Months 14–18 (Weeks 55–72): Re-solve past Zoho machine coding (L3), Top 50 SQL, Pramp mock interviews, and earn Zoho Learn Certifications.",
+      "status": "not_started",
+      "startDate": "2026-07-01",
+      "targetDate": "2026-07-21",
+      "progress": 0
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-1-1",
+      "phaseId": "phase-1",
+      "title": "OOPs Design Principles & JVM Internals",
+      "description": "Inheritance, encapsulation, runtime polymorphism, virtual method dispatch, garbage collection heaps, and stack frames.",
+      "progress": 85,
+      "category": "Java"
+    },
+    {
+      "id": "topic-1-2",
+      "phaseId": "phase-1",
+      "title": "JDK Collections & Hashing Mechanics",
+      "description": "Deep dive into HashMap collision resolution treeification, ArrayList capacity growth formulas, LinkedList, and concurrent structures.",
+      "progress": 60,
+      "category": "Java"
+    },
+    {
+      "id": "topic-1-3",
+      "phaseId": "phase-1",
+      "title": "Java Multi-Threading & Exceptions",
+      "description": "Thread lifecycle, Runnable vs Thread, synchronized blocks, wait/notify, ReentrantLock, and customException pools.",
+      "progress": 10,
+      "category": "Java"
+    },
+    {
+      "id": "topic-2-1",
+      "phaseId": "phase-2",
+      "title": "Arrays, Sorting, Two-Pointers & Binary Search",
+      "description": "Fast-slow pointers, sliding window, binary search variations, Dutch National Flag, and Merge Sort variants.",
+      "progress": 100,
+      "category": "DSA"
+    },
+    {
+      "id": "topic-2-2",
+      "phaseId": "phase-2",
+      "title": "Stack, Queue, Recursion & Linked Lists",
+      "description": "Custom singly & doubly linked lists, queue simulations using arrays, and monotonic stacks.",
+      "progress": 30,
+      "category": "DSA"
+    },
+    {
+      "id": "topic-2-3",
+      "phaseId": "phase-2",
+      "title": "Trees, Heaps, Graphs & DP",
+      "description": "Solving backtracking grids, BSTs, level BFS, Dijkstra, and tabulations.",
+      "progress": 10,
+      "category": "DSA"
+    },
+    {
+      "id": "topic-2-4",
+      "phaseId": "phase-2",
+      "title": "RDBMS Normalization & SQL Queries",
+      "description": "Decompositions, JOINS, GROUP BY, Window functions, and indexes optimization.",
+      "progress": 20,
+      "category": "DBMS"
+    },
+    {
+      "id": "topic-2-5",
+      "phaseId": "phase-2",
+      "title": "OS Scheduling, Threading & Page Memory",
+      "description": "Explain scheduling policies, virtual memory sizing, Bankers deadlock, and memory allocation segments.",
+      "progress": 20,
+      "category": "OS"
+    },
+    {
+      "id": "topic-3-1",
+      "phaseId": "phase-3",
+      "title": "REST Backend Project 1: Contacts Server",
+      "description": "Spring Boot CRUD routes, SQL database connection, JPA query drivers, and testing.",
+      "progress": 0,
+      "category": "Projects"
+    },
+    {
+      "id": "topic-3-2",
+      "phaseId": "phase-3",
+      "title": "REST Backend Project 2: Inventory Tracker",
+      "description": "Database schemas, models, complex updates sequences, and GitHub profiling.",
+      "progress": 0,
+      "category": "Projects"
+    },
+    {
+      "id": "topic-3-3",
+      "phaseId": "phase-3",
+      "title": "REST Backend Project 3: Showpiece Helpdesk",
+      "description": "Premium JWT security logins, API pagination, and server architectures.",
+      "progress": 0,
+      "category": "Projects"
+    },
+    {
+      "id": "topic-4-1",
+      "phaseId": "phase-4",
+      "title": "Railway Reservation System (L3)",
+      "description": "Manage berth counts (lower, middle, upper, RAC, waiting), booking priority, cancellations, chart configurations.",
+      "progress": 0,
+      "category": "Interview Preparation"
+    },
+    {
+      "id": "topic-4-2",
+      "phaseId": "phase-4",
+      "title": "Taxi Dispatching Booking (L3)",
+      "description": "Manage 4+ taxis, customer booking triggers, nearest distance coordinates calculation, revenue metrics tracker.",
+      "progress": 0,
+      "category": "Interview Preparation"
+    },
+    {
+      "id": "topic-4-3",
+      "phaseId": "phase-4",
+      "title": "Mocks, Resume Polish & Certifications",
+      "description": "Live Pramp peer-to-peer technical interview mock assessments and corporate culture STAR answers.",
+      "progress": 0,
+      "category": "Interview Preparation"
+    }
+  ],
+  "milestones": [
+    {
+      "id": "ms-1",
+      "topicId": "topic-1-1",
+      "title": "SOLID Master",
+      "description": "Design an entire system satisfying all 5 SOLID pillars",
+      "status": "completed"
+    },
+    {
+      "id": "ms-2",
+      "topicId": "topic-1-2",
+      "title": "Custom HashMap Simulator",
+      "description": "Implement collision resolution on buckets",
+      "status": "pending"
+    },
+    {
+      "id": "ms-3",
+      "topicId": "topic-2-1",
+      "title": "Sliding Window Pro",
+      "description": "Solve 15 Sliding window questions on LC",
+      "status": "completed"
+    },
+    {
+      "id": "ms-4",
+      "topicId": "topic-4-1",
+      "title": "Railway Prototype",
+      "description": "Simulate ticket booking loop with RAC logic",
+      "status": "pending"
+    }
+  ],
+  "resources": [
+    {
+      "id": "res-1",
+      "topicId": "topic-1-1",
+      "title": "Oracle JVM Architecture Specifications",
+      "description": "Official reference manual for JVM memory structures, Heap allocation, and GC parameters.",
+      "link": "https://docs.oracle.com/javase/specs/jvms/se19/html/index.html",
+      "priority": "high",
+      "estimatedHours": 4,
+      "completed": true
+    },
+    {
+      "id": "res-2",
+      "topicId": "topic-1-1",
+      "title": "Refactoring Guru - Behavioral & Creational Patterns",
+      "description": "Visual explanation of Factory, Singleton, Observer, and Strategy patterns with Java code.",
+      "link": "https://refactoring.guru/design-patterns",
+      "priority": "medium",
+      "estimatedHours": 6,
+      "completed": true
+    },
+    {
+      "id": "res-3",
+      "topicId": "topic-1-2",
+      "title": "Deep-Dive HashMap Source Code Analysis",
+      "description": "A comprehensive look at bin treeification under JDK 8 collisions.",
+      "link": "https://openjdk.org/projects/jdk/",
+      "priority": "high",
+      "estimatedHours": 3,
+      "completed": false
+    },
+    {
+      "id": "res-4",
+      "topicId": "topic-2-1",
+      "title": "NeetCode 150 Core DSA Checklist",
+      "description": "A highly structured visual index of all major DSA patterns with detailed video solutions.",
+      "link": "https://neetcode.io/practice",
+      "priority": "high",
+      "estimatedHours": 12,
+      "completed": true
+    },
+    {
+      "id": "res-5",
+      "topicId": "topic-2-3",
+      "title": "Recursion & Backtracking Masterclass",
+      "description": "Intuitive strategies to solve complex recursion trees and state-pruning backtracking grids.",
+      "link": "https://leetcode.com/discuss/study-guide/1405817/backtracking-template",
+      "priority": "medium",
+      "estimatedHours": 5,
+      "completed": false
+    },
+    {
+      "id": "res-6",
+      "topicId": "topic-4-1",
+      "title": "Zoho Advanced Round Past Booking Prompts",
+      "description": "Historical description of ticket counters, waitlists, lower-berth quotas for senior citizens.",
+      "link": "https://www.geeksforgeeks.org/zoho-interview-experience/",
+      "priority": "high",
+      "estimatedHours": 8,
+      "completed": false
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task-1",
+      "phaseId": "phase-1",
+      "topicId": "topic-1-1",
+      "milestoneId": "ms-1",
+      "title": "Model Parking Lot Design in Java",
+      "description": "Define class hierarchies, abstract billing, and thread-safe spot allocations.",
+      "status": "completed",
+      "dueDate": "2026-06-03",
+      "completedAt": "2026-06-03"
+    },
+    {
+      "id": "task-2",
+      "phaseId": "phase-1",
+      "topicId": "topic-1-1",
+      "milestoneId": null,
+      "title": "Analyse GC pause benchmarks manually",
+      "description": "Compare G1 GC vs ZGC pause thresholds under massive Linked List loads.",
+      "status": "completed",
+      "dueDate": "2026-06-08",
+      "completedAt": "2026-06-07"
+    },
+    {
+      "id": "task-3",
+      "phaseId": "phase-1",
+      "topicId": "topic-1-2",
+      "milestoneId": "ms-2",
+      "title": "Build custom ArrayList with auto-resize",
+      "description": "Override add, delete, set, trimToSize and verify capacity doubling metrics.",
+      "status": "pending",
+      "dueDate": "2026-06-13",
+      "completedAt": null
+    },
+    {
+      "id": "task-4",
+      "phaseId": "phase-2",
+      "topicId": "topic-2-1",
+      "milestoneId": "ms-3",
+      "title": "Solve 'Longest Substring Without Repeating Characters'",
+      "description": "Implement O(N) slider using analytical HashMap positions on Leetcode.",
+      "status": "completed",
+      "dueDate": "2026-06-10",
+      "completedAt": "2026-06-10"
+    },
+    {
+      "id": "task-5",
+      "phaseId": "phase-2",
+      "topicId": "topic-2-3",
+      "milestoneId": null,
+      "title": "Write dynamic N-Queens console print loop",
+      "description": "Verify backtrack branching limits by logging coordinate matrices.",
+      "status": "pending",
+      "dueDate": "2026-06-16",
+      "completedAt": null
+    },
+    {
+      "id": "task-6",
+      "phaseId": "phase-4",
+      "topicId": "topic-4-1",
+      "milestoneId": "ms-4",
+      "title": "Implement booking RAC fallback priority array",
+      "description": "Write priority booking algorithm for senior citizens and females.",
+      "status": "pending",
+      "dueDate": "2026-06-23",
+      "completedAt": null
+    }
+  ],
+  "studySessions": [
+    {
+      "id": "sess-1",
+      "topicId": "topic-1-1",
+      "date": "2026-06-04",
+      "hours": 2,
+      "minutes": 30,
+      "notes": "Exploration of Class loaders, Java Stack allocations and Heap segments. Set up standard garbage logger.",
+      "sessionType": "Java Warmup"
+    },
+    {
+      "id": "sess-2",
+      "topicId": "topic-2-5",
+      "date": "2026-06-05",
+      "hours": 1,
+      "minutes": 45,
+      "notes": "Solved work equivalence equations and relative downstream boat rates.",
+      "sessionType": "Aptitude Test"
+    },
+    {
+      "id": "sess-3",
+      "topicId": "topic-2-1",
+      "date": "2026-06-06",
+      "hours": 3,
+      "minutes": 15,
+      "notes": "Coded dynamic sliding window trackers. Solved 4 Medium issues related to subarray constraints.",
+      "sessionType": "DSA Practice"
+    },
+    {
+      "id": "sess-4",
+      "topicId": "topic-1-1",
+      "date": "2026-06-07",
+      "hours": 2,
+      "minutes": 0,
+      "notes": "Architected custom SOLID Parking Lot system. Designed interface separations for vehicle size constraints.",
+      "sessionType": "Java Warmup"
+    },
+    {
+      "id": "sess-5",
+      "topicId": "topic-1-2",
+      "date": "2026-06-08",
+      "hours": 1,
+      "minutes": 30,
+      "notes": "Diagrammed resize index hash treeification on JDK 8 hashmap structures.",
+      "sessionType": "Notes Review"
+    },
+    {
+      "id": "sess-6",
+      "topicId": "topic-2-1",
+      "date": "2026-06-09",
+      "hours": 2,
+      "minutes": 45,
+      "notes": "Investigated dutch-flag partitioning speed records under low auxiliary space conditions.",
+      "sessionType": "DSA Practice"
+    },
+    {
+      "id": "sess-7",
+      "topicId": "topic-1-3",
+      "date": "2026-06-10",
+      "hours": 1,
+      "minutes": 15,
+      "notes": "Completed matrix index circles and blood relative connections challenges.",
+      "sessionType": "Aptitude Test"
+    },
+    {
+      "id": "sess-8",
+      "topicId": "topic-1-1",
+      "date": "2026-06-11",
+      "hours": 3,
+      "minutes": 0,
+      "notes": "Worked on simulated deadlock conditions and thread monitor locks.",
+      "sessionType": "Java Warmup"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-2",
+      "title": "Optimized Sliding Window Concept",
+      "content": "## The Sliding Window Template\n\nUseful for solving substrings or subsegments with maximum lengths or coordinate checks inside O(N) speed limits.\n\n```java\nint left = 0;\nint right = 0;\nMap<Character, Integer> counts = new HashMap<>();\nint maxLength = 0;\n\nwhile (right < array.length) {\n    char c = array[right];\n    counts.put(c, counts.getOrDefault(c, 0) + 1);\n    \n    while (counts.get(c) > limit) { // Shrink barrier\n        char l = array[left];\n        counts.put(l, counts.get(l) - 1);\n        left++;\n    }\n    \n    maxLength = Math.max(maxLength, right - left + 1);\n    right++;\n}\n```",
+      "tags": [
+        "DSA",
+        "LeetCode",
+        "TwoPointers"
+      ],
+      "topicId": "topic-2-1",
+      "createdAt": "2026-06-06",
+      "updatedAt": "2026-06-06"
+    },
+    {
+      "id": "note-3",
+      "title": "Zoho Past Round: Railway Reservation Breakdown",
+      "content": "## Zoho Railway Round Notes\n\n### Core Rules Required:\n1. **Total Berths**: 63 (e.g. Upper: 21, Middle: 21, Lower: 21).\n2. **RAC Count**: 18. **Waiting List (WL)**: 10.\n3. **Seat allocation logic**:\n   - Lower berth holds priority for Senior Citizens (>60 yrs) and Ladies.\n   - If lower is empty/vacated, dispatch to priority.\n   - If all berths full, book RAC (Side-lower seats shared by two persons).\n   - If RAC full, allocate WL.\n4. **Cancellation Rules**:\n   - WL cancellation pulls up next WL.\n   - RAC cancellation promotes next RAC to confirmed berth, next WL shifts to RAC.",
+      "tags": [
+        "Interview Prep",
+        "L3",
+        "Railway"
+      ],
+      "topicId": "topic-4-1",
+      "createdAt": "2026-06-10",
+      "updatedAt": "2026-06-10"
+    }
+  ],
+  "achievements": [
+    {
+      "id": "ach-1",
+      "title": "First Ascent",
+      "description": "Logged your very first active study session inside Syntaxia.",
+      "badge": "Flame",
+      "unlocked": true,
+      "unlockedAt": "2026-06-04",
+      "criteriaType": "session_count",
+      "criteriaValue": 1
+    },
+    {
+      "id": "ach-2",
+      "title": "Streak Master",
+      "description": "Achieved a solid 5-day continuous learning streak.",
+      "badge": "Target",
+      "unlocked": true,
+      "unlockedAt": "2026-06-10",
+      "criteriaType": "streak",
+      "criteriaValue": 5
+    },
+    {
+      "id": "ach-3",
+      "title": "Lorekeeper",
+      "description": "Wrote 3 high-quality markdown learning notes inside resource logs.",
+      "badge": "BookOpen",
+      "unlocked": true,
+      "unlockedAt": "2026-06-10",
+      "criteriaType": "notes_count",
+      "criteriaValue": 3
+    },
+    {
+      "id": "ach-4",
+      "title": "L3 Prototype Builder",
+      "description": "Inaugurated preparation for Railway, Taxi Booking or Splitwise modules.",
+      "badge": "Award",
+      "unlocked": false,
+      "unlockedAt": null,
+      "criteriaType": "phase_count",
+      "criteriaValue": 4
+    },
+    {
+      "id": "ach-5",
+      "title": "Grind Commenced",
+      "description": "Logged more than 15 hours of cumulative learning and coding.",
+      "badge": "BarChart3",
+      "unlocked": true,
+      "unlockedAt": "2026-06-11",
+      "criteriaType": "hours_count",
+      "criteriaValue": 10
+    },
+    {
+      "id": "ach-6",
+      "title": "SQL Legend",
+      "description": "Completed all DBMS SQL queries benchmarks on schema optimization.",
+      "badge": "Database",
+      "unlocked": false,
+      "unlockedAt": null,
+      "criteriaType": "tasks_count",
+      "criteriaValue": 5
+    }
+  ]
+}
